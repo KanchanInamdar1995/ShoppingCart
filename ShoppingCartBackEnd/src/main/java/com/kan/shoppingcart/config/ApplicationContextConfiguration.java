@@ -1,4 +1,5 @@
 package com.kan.shoppingcart.config;
+
 import java.util.Properties;
 
 import javax.sql.DataSource;
@@ -12,10 +13,15 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import com.kan.shoppingcart.domain.Product;
+import com.kan.shoppingcart.domain.User;
+
 @Configuration
 @ComponentScan("com.kan")
 @EnableTransactionManagement
 public class ApplicationContextConfiguration {
+
 	@Bean(name = "dataSource")
 	public DataSource getDataSource() {
 
@@ -49,8 +55,14 @@ public class ApplicationContextConfiguration {
 		//3 : Domain objects  (one class for each table)
 		LocalSessionFactoryBuilder sessionBuilder = new LocalSessionFactoryBuilder(dataSource);
 		sessionBuilder.addProperties(getHibernateProperties());
-		
+		//adding all entities at a time.
 		sessionBuilder.scanPackages("com.kan");
+		
+		//adding entity one by one.
+		
+		//sessionBuilder.addAnnotatedClass(User.class);
+		//sessionBuilder.addAnnotatedClass(Product.class);
+		
 	
 		return sessionBuilder.buildSessionFactory();
 	}
@@ -63,4 +75,7 @@ public class ApplicationContextConfiguration {
 
 		return transactionManager;
 	}
+
+	
+
 }

@@ -1,5 +1,7 @@
 package com.kan.shoppingcart.domain;
 import java.sql.Date;
+
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -7,6 +9,7 @@ import org.springframework.stereotype.Component;
 @Component   //will create instance of User class --- user
 @Table 
 public class Category {
+@Id	
 private String name;
 private String description;
 private Date added_date;

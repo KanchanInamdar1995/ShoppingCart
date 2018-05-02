@@ -3,6 +3,7 @@ package com.kan.shoppingcart.domain;
 import java.sql.Date;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Component;
 //2)To specific that it is not normal class -- to map to a table
 @Component   //will create instance of User class --- user
 @Table       //This User class will map to User Table
+@Entity
 public class User {
 	
 	//we specified this User to should map to User Table
