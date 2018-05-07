@@ -1,6 +1,7 @@
 package com.kan.shoppingcart.domain;
 import java.sql.Date;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Component   
 @Table 
+@Entity
 public class Product {
 @Id
 private String id;
