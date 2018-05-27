@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<<<<<<< HEAD
 Please fill the data
 <form action="">
 Email ID: <input type="text" name="emailID">  <br>
@@ -20,5 +21,8 @@ Address:  <input type="text" name="emailID">  <br>
 
 </form>
 
+=======
+This is register page
+>>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
 </body>
 </html>

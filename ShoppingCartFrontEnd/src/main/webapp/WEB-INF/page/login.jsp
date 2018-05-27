@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<<<<<<< HEAD
 <style>
 
 </style>
@@ -10,10 +11,13 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+=======
+>>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
+<<<<<<< HEAD
 <div class = "container">
 	<div class="wrapper">
 		<form action="" method="post" name="Login_Form" class="form-signin">       
@@ -29,5 +33,8 @@
 </div>
 
 
+=======
+This is login Page
+>>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
 </body>
 </html>

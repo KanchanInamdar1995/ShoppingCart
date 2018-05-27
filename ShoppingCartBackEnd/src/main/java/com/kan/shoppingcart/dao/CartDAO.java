@@ -10,3 +10,7 @@ public interface CartDAO {
 	public boolean delete(int id);
 	public List<Cart> list(String emailID);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4

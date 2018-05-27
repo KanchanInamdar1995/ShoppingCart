@@ -5,7 +5,11 @@
 	version="3.0">
 	<display-name>Archetype Created Web Application</display-name>
 	<welcome-file-list>
+<<<<<<< HEAD
 		<welcome-file>home.jsp</welcome-file>
+=======
+		<welcome-file>Home.jsp</welcome-file>
+>>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
 	</welcome-file-list>
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>

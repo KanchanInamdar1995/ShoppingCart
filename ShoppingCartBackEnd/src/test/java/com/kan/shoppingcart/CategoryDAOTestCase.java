@@ -103,3 +103,7 @@ private static AnnotationConfigApplicationContext context;
 	
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4

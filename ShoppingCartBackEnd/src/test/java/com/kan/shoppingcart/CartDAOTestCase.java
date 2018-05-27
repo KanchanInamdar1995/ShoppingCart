@@ -62,3 +62,8 @@ private static AnnotationConfigApplicationContext context;
 		Assert.assertEquals(" delete cart test case",true, actual);
 	}
 	}
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
