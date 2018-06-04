@@ -1,6 +1,8 @@
 package com.kan.shoppingcart;
 import static org.junit.Assert.*;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -30,40 +32,65 @@ private static AnnotationConfigApplicationContext context;
 	cart = (Cart) context.getBean("cart");
 			
 	}
-	//@Test
-	public void saveCartTestCase()
+	@Test
+	public void addToCartTestCase()
 	{
-		cart= new Cart();
-		cart.setEmailID("Shruti96@gmail.com");
-		cart.setId(1);
-		cart.setPrice(2500);
+		Cart cart= new Cart();
+		cart.setEmailID("piyush1995@gmail.com");
+		//cart.setId(2);
+		cart.setPrice(34999);
 		cart.setProductName("Denim Jacket");
-		cart.setQuantity(2);
-		cart.setStatus('N');
+		//cart.setQuantity(2);
+		//cart.setStatus('N');
 		boolean result= cartDAO.save(cart);
 		Assert.assertEquals("save user",true,result);
 	}
-//	//@Test
-//	public void validateCredentialsSuccess()
-//	{
-//		user = userDAO.validate("Shruti@gmail.com", "shruti@123");
-//		Assert.assertNotNull("validate test case" , user);
-//	}
-//	//@Test
-//	public void validateCredentialsFailure()
-//	{
-//		user = userDAO.validate("Shruti@gmail.com", "shruti@1234");
-//	
-//	}
 	@Test
+	public void updateCartTestCase()
+	{
+		
+	Cart cart=	cartDAO.get(1);
+	cart.setQuantity(5);
+	Assert.assertEquals(true,  cartDAO.update(cart));
+	
+	}
+	@Test
+	public void getCartSuccessTestCase()
+	{
+	Assert.assertNotNull( cartDAO.get(1));
+	}
+	@Test
+	public void getCartFailureTestCase()
+	{
+	Assert.assertNull( cartDAO.get(10));
+	}
+	//@Test 
 	public void deleteCartTestCase()
 	{
-		boolean actual = cartDAO.delete(1);
-		Assert.assertEquals(" delete cart test case",true, actual);
+		Assert.assertEquals(true,	cartDAO.delete(3));
+	}
+	//@Test
+	public void productDispatchedTestCase()
+	{
+	cart=	cartDAO.get(3);
+	cart.setStatus('D');
+	Assert.assertEquals(true,cartDAO.update(cart));
+	
+	}
+	@Test
+	public void dispatchAllTheProductsTestCase()
+	{
+	List<Cart> carts = 	cartDAO.list("shruti02@gmail.com");
+	Assert.assertEquals(true,cartDAO.update(carts,'D'));
+		
+	}
+	@Test 
+	public void deliverAllTheProductsTestCase()
+	{
+	List<Cart> carts = 	cartDAO.list("piyush1995@gmail.com");
+	Assert.assertEquals(true,cartDAO.update(carts,'L'));
+		
 	}
 	}
-<<<<<<< HEAD
-=======
 
 
->>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4

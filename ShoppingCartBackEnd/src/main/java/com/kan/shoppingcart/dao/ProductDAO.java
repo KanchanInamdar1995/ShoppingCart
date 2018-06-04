@@ -23,9 +23,5 @@ public interface ProductDAO {
 		
 		public List<Product> list(String productName, int minAmount, int MaxAmout);
 		
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4

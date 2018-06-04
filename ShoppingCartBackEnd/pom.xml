@@ -15,73 +15,48 @@
   </properties>
 
   <dependencies>
-<<<<<<< HEAD
-     <!-- https://mvnrepository.com/artifact/junit/junit -->
-=======
-  <!-- https://mvnrepository.com/artifact/junit/junit -->
->>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
-<dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.12</version>
-    <scope>test</scope>
-</dependency>
-<<<<<<< HEAD
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
-=======
-  
-  <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
->>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-orm</artifactId>
-    <version>5.0.4.RELEASE</version>
-</dependency>
-<<<<<<< HEAD
-  <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-=======
-  
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
->>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-context</artifactId>
-    <version>5.0.5.RELEASE</version>
-</dependency>
-<<<<<<< HEAD
- <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-=======
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
->>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-core</artifactId>
-    <version>5.0.5.RELEASE</version>
-</dependency>
-<<<<<<< HEAD
- <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
-=======
-    <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
->>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
-<dependency>
-    <groupId>com.h2database</groupId>
-    <artifactId>h2</artifactId>
-    <version>1.4.196</version>
-    <scope>test</scope>
-</dependency>
-<<<<<<< HEAD
-<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-=======
-    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
->>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-core</artifactId>
-    <version>5.2.13.Final</version>
-</dependency>
-<<<<<<< HEAD
-=======
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>5.0.5.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>5.0.5.RELEASE</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.2.13.Final</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>5.0.4.RELEASE</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.196</version>
+
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
     
->>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
   </dependencies>
 </project>

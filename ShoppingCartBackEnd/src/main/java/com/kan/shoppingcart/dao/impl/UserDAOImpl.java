@@ -87,4 +87,7 @@ public class UserDAOImpl implements UserDAO {
 				.add(Restrictions.eq("password", password)).uniqueResult();
 
 }
+	public List<User> list(char role) {
+		return sessionFactory.getCurrentSession().createCriteria(User.class).add(Restrictions.eq("role", role)).list();
+	}
 }

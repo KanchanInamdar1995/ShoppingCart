@@ -1,10 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
 Built-By: Hp
 Build-Jdk: 1.8.0_171
-=======
-Built-By: Kanchan
-Build-Jdk: 1.8.0_141
->>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
 Created-By: Maven Integration for Eclipse
 

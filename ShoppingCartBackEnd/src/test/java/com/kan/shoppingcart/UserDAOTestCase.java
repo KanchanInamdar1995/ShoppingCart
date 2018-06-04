@@ -29,17 +29,17 @@ private static AnnotationConfigApplicationContext context;
 	user = (User) context.getBean("user");
 			
 	}
-	@Test
+	//@Test
 	public void saveUserTestCase()
 	{
 		user= new User();
 	
-		user.setEmailID("sonali12@gmail.com");
-		user.setName("Sonali");
-		user.setPassword("Sonalee23");
+		user.setEmailID("shruti02@gmail.com");
+		user.setName("Shruti");
+		user.setPassword("shruti96");
 		user.setRole('C');
-		user.setMobile("9636543249");
-		user.setAddress("Vimaan Nagar");
+		user.setMobile("9764654214");
+		user.setAddress("Seawood");
 		boolean result= userDAO.save(user);
 		Assert.assertEquals("save user",true,result);
 	}
@@ -48,7 +48,7 @@ private static AnnotationConfigApplicationContext context;
 	{
 		//if the credentials are correct - will return user object
 		//else will return null
-		user = userDAO.validate("Shruti96@gmail.com", "shruti1996");
+		user = userDAO.validate("kanchan95@gmail.com", "kanchan95");
 		
 		//expecting is not null   --will compare with actual -- user
 		Assert.assertNotNull("validate test case" , user);
@@ -63,32 +63,36 @@ private static AnnotationConfigApplicationContext context;
 		//expecting is not null   --will compare with actual -- user
 		Assert.assertNull("validate test case" , user);
 	}
-	@Test
+	//@Test
 	public void deleteUserTestCase()
 	{
-		boolean actual = userDAO.delete("kalyani28@@gmail.com");
+		boolean actual = userDAO.delete("kalyani28@gmail.com");
 		Assert.assertEquals(" delete user test case",true, actual);
 	}
 	//the method which u get can only be updated
 	@Test
 	public void getUserTestCase()
 	{
-	user=	userDAO.get("Shruti96@gmail.com");
+	user=	userDAO.get("piyush1995@gmail.com");
 	Assert.assertNotNull(user);
 	}
-	@Test
+	//@Test
 	public void updateUserTestCase()
 	{
-	user=	userDAO.get("Shruti96@gmail.com");
+	user=	userDAO.get("shruti02@gmail.com");
 	user.setAddress("Seawood darawe");
 	
 	
 	boolean actual = userDAO.update(user);
 	Assert.assertEquals(true, actual);
 	}
+	@Test
+	public void getAllUsers()
+	{
+		int size = userDAO.list().size();
+		
+		Assert.assertEquals(5, size);
 	}
-<<<<<<< HEAD
-=======
+	}
 
 
->>>>>>> e5b5c9181fd7718802a86ebb69546cbb54d218a4
