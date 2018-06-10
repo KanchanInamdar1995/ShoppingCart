@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,18 +12,16 @@
 
 </head>
 <body>
+
 ${msg}
 
 
-	<center>
-		<h2 >Welcome to Shopping Cart</h2>
-	</center>
-
 	<!--  include login_header.jsp here -->
 	<jsp:include page="login_header.jsp"></jsp:include>
+	<jsp:include page="carousel.jsp"></jsp:include>
 	<jsp:include page="category_menu.jsp"></jsp:include>
 	
-	<jsp:include page="imageslider.jsp"></jsp:include> 
+	<%-- <jsp:include page="imageslider.jsp"></jsp:include> --%>
 
 	<!-- when user click login, then only login.jsp
 	should include...it means we need to write
@@ -37,9 +35,22 @@ ${msg}
 	<c:if test="${isUserClickedRegister==true}">
 		<jsp:include page="register.jsp"></jsp:include>
 	</c:if>
+	
+	<c:if test="${isAdmin==true}">
+		<jsp:include page="admin/admin.jsp"></jsp:include>
+	</c:if>
+	
+	<c:if test="${isUserClickedMyCart==true}">
+		<jsp:include page="Cart.jsp"></jsp:include>
+</c:if>
 
 
 </div>
-
 </body>
 </html>
+
+
+
+
+
+
